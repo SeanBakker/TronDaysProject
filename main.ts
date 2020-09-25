@@ -186,6 +186,24 @@ scene.setBackgroundImage(img`
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
     `)
 scene.setBackgroundColor(1)
+game.setDialogFrame(img`
+    . . . . . . . . . . . . . . . 
+    . f f f f f f f f f f f f f . 
+    . f 5 5 5 5 5 5 5 5 5 5 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 . . . . . . . . . 5 f . 
+    . f 5 5 5 5 5 5 5 5 5 5 5 f . 
+    . f f f f f f f f f f f f f . 
+    . . . . . . . . . . . . . . . 
+    `)
+game.showLongText("Welcome to Flappy Goose!", DialogLayout.Bottom)
 info.startCountdown(60)
 game.onUpdate(function () {
     playerGoose.setVelocity(0, gravity)
